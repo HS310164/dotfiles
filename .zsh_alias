@@ -1,0 +1,8 @@
+alias -g ls='ls --color=auto'
+alias -g grep='grep --color=auto'
+alias -g fgrep='fgrep --color=auto'
+alias -g egrep='egrep --color=auto'
+
+alias -g ll='ls -alF'
+alias -g la='ls -A'
+alias -g l='ls -CF'

@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/mnt/serverhome03/hsato/aligmentsato/results/pc/bof/vw500/chin_2m08s'
+let g:netrw_dirhist_2='/mnt/localhdd1/userdir/hsato/test'
+let g:netrw_dirhist_3='/mnt/localhdd1/userdir/hsato/3D-ResNets-PyTorch/train'
+let g:netrw_dirhist_4='/mnt/hdd3/userdir/hsato/google-research/tcc/algos'
