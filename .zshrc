@@ -47,6 +47,7 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 #[%n@%m]%# '
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="${HOME}/scripts:$PATH"
 #pyenv settings
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PYENV_ROOT/shims:$PATH"
@@ -99,25 +100,7 @@ setopt list_packed
 # colors
 # zstyle ':completion:*' list-colors "${LS_COLORS}"
 
-case ${OSTYPE} in
-    darwin*)
-        #Mac用の設定
-        export CLICOLOR=1
-        alias ls='ls -G -F'
-        ;;
-    linux*)
-        #Linux用の設定
-        alias ls='ls -F --color=auto'
-        ;;
-esac
-
-alias -g grep='grep --color=auto'
-alias -g fgrep='fgrep --color=auto'
-alias -g egrep='egrep --color=auto'
-
-alias -g ll='ls -alF'
-alias -g la='ls -A'
-alias -g l='ls -CF'
+source ~/.zsh_alias
 
 # key-binds
 bindkey '^r' history-search-multi-word

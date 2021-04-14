@@ -1,5 +1,4 @@
 syntax enable
-colorscheme monokai
 set virtualedit=onemore
 set wildmode=list:longest
 set ignorecase
@@ -9,3 +8,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 inoremap jk <Esc>
+
+packadd! dracula
+syntax enable
+colorscheme dracula

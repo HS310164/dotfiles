@@ -1,8 +1,24 @@
-alias -g ls='ls --color=auto'
+case ${OSTYPE} in
+    darwin*)
+        #Mac用の設定
+        export CLICOLOR=1
+        alias ls='ls -G -F'
+        ;;
+    linux*)
+        #Linux用の設定
+        alias ls='ls -F --color=auto'
+        ;;
+esac
+
+#colorize grep 
 alias -g grep='grep --color=auto'
 alias -g fgrep='fgrep --color=auto'
 alias -g egrep='egrep --color=auto'
 
+#make alias relate ls
 alias -g ll='ls -alF'
 alias -g la='ls -A'
 alias -g l='ls -CF'
+
+#default python version 2 to 3
+alias python='python3'
