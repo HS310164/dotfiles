@@ -100,6 +100,13 @@ setopt list_packed
 # colors
 # zstyle ':completion:*' list-colors "${LS_COLORS}"
 
+# autoload bashcompinit && bashcompinit
+# source ~/.zinit/plugins/drgr33n---oh-my-zsh_aws2-plugin/aws2_zsh_completer.sh
+# complete -C '/usr/local/bin/aws_completer' aws
+# zinit light drgr33n/oh-my-zsh_aws2-plugin
+
+zinit snippet https://github.com/aws/aws-cli/blob/v2/bin/aws_zsh_completer.sh
+
 source ~/.zsh_alias
 
 # key-binds
